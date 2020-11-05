@@ -74,7 +74,7 @@ How to setup:
 		$ sudo apt-get install libjansson4  libjansson-dev
 		$ sudo apt-get install librdkafka1=0.11.3-1build1
 		
-	3. Download the "work" directory and place it on your Jetson or replace the news files you downloaded with the original one.
+	3. Replace the news files you downloaded with the original one.
 		$ mkdir work
 		$ sudo cp -r /opt/nvidia/deepstream/deepstream-5.0/samples ~/work
 		$ sudo mv deepstream_test4_app.c ~/work/sources/apps/sample_apps/deepstream-test4/deepstream_test4_app.c 
