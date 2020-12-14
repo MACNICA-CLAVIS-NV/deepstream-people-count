@@ -76,9 +76,8 @@ How to setup:
 		
 	3. Replace the news files you downloaded with the original one.
 		$ mkdir work
-		$ sudo cp -r /opt/nvidia/deepstream/deepstream-5.0/samples ~/work
-		$ sudo mv deepstream_test4_app.c ~/work/sources/apps/sample_apps/deepstream-test4/deepstream_test4_app.c 
 		$ sudo cp -r /opt/nvidia/deepstream/deepstream-5.0/sources ~/work
+		$ sudo mv deepstream_test4_app.c ~/work/sources/apps/sample_apps/deepstream-test4/deepstream_test4_app.c
 		$ sudo mv nvmsgconv.cpp ~/work/sources/libs/nvmsgconv/nvmsgconv.cpp
 		
 	4. Make 2 files
