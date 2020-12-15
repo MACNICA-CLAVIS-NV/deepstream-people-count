@@ -102,8 +102,13 @@ How to setup:
 		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The placement of the debug icon.png">
 		2. Please find the "person_count" on the debug messages and check the number(the original number is "123" but, it is "93" in the below image)
 		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/person_count on the debug messages.png">
-		3. You should find the number of object function and change it as the below:
-			for example : var msgnew = {payload: a[124]} (the original number of object function in the flow)
-		4. Click the "Deploy" button
+		3. Double click the red mark
+		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The placement of the object function.png">
+		4. You should find the number of the element in the next "person_count" on the debag messages and apply it to the payload in the object function as the below:
+			for example : var msgnew = {payload: a[124]} (the original number of object function:"124", the number in the following image:"94")
+		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The value of the payload in the object function.png">
+		5. Click the "Deploy" button
 
 5. Check the result on Browser
+		You can realize the result of the people-count when you click the red marks according to the order in the below
+		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The order of displaying for the dashboad.png">
