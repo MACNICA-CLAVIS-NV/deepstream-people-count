@@ -112,3 +112,4 @@ How to setup:
 5. Check the result on Browser
 		You can realize the result of the people-count when you click the red marks according to the order in the below
 		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The order of displaying for the dashboad.png">
+		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The result of the people-count.png">
