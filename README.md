@@ -98,9 +98,11 @@ How to setup:
 		$ deepstream-test4-app -p /opt/nvidia/deepstream/deepstream-5.0/lib/libnvds_kafka_proto.so --conn-str="127.0.0.1;9092;test"
 		
 4. Modify the flow to adapt your environment in the Node-RED
-		1. Please find the "person_count" on the debug messages and check the number(the original number is "123")
-		2. You should find the number of object function and change it as the below:
+		1. Click the red mark
+		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The placement of the debug icon.png">
+		2. Please find the "person_count" on the debug messages and check the number(the original number is "123")
+		3. You should find the number of object function and change it as the below:
 			for example : var msgnew = {payload: a[124]} (the original number of object function in the flow)
-		3. Click the "Deploy" button
+		4. Click the "Deploy" button
 
 5. Check the result on Browser
