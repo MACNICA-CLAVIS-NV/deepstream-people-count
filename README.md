@@ -106,7 +106,7 @@ How to setup:
 		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The placement of the object function.png">
 		4. You should find the number of the element in the next "person_count" on the debag messages and apply it to the payload in the object function as the below:
 			for example : var msgnew = {payload: a[124]}
-			(the original number of object function:"124", the number in the following image:"94")
+			 (the original number of object function:"124", the number in the following image:"94")
 		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The value of the payload in the object function.png">
 		5. Click the "Deploy" button
 
