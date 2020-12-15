@@ -101,6 +101,7 @@ How to setup:
 		1. Click the red mark
 		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/The placement of the debug icon.png">
 		2. Please find the "person_count" on the debug messages and check the number(the original number is "123")
+		<img src="https://github.com/MACNICA-CLAVIS-NV/deepstream-people-count/blob/main/images/person_count on the debug messages.png">
 		3. You should find the number of object function and change it as the below:
 			for example : var msgnew = {payload: a[124]} (the original number of object function in the flow)
 		4. Click the "Deploy" button
