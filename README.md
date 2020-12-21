@@ -22,13 +22,13 @@ How to setup:
 	2. Download from the below site
 		https://downloads.apache.org/kafka/2.5.0/kafka_2.12-2.5.0.tgz
 
-	3. Build Kafka server into Jetson (Noted that you should keep to open terminal screen)
+	3. Build Kafka server into Jetson (Note that you should keep to open terminal screen)
 		$ cd ~/Downloads
 		$ tar -xzf kafka_2.12-2.5.0.tgz
 		$ cd kafka_2.12-2.5.0
 		$ bin/zookeeper-server-start.sh config/zookeeper.properties
 
-	4. Start Kafka sever (Noted that you should keep to open terminal screen)
+	4. Start Kafka sever (Note that you should keep to open terminal screen)
 		$ cd ~/Downloads/kafka_2.12-2.5.0
 		$ bin/kafka-server-start.sh config/server.properties
 
@@ -47,7 +47,7 @@ How to setup:
 		$ node -v
 		$ npm -v
 
-	2. Start Node-RED (Noted that you should keep to open terminal screen)
+	2. Start Node-RED (Note that you should keep to open terminal screen)
 		$ sudo npm install -g --unsafe-perm node-red
 		$ node-red
 
@@ -80,18 +80,25 @@ How to setup:
 		$ sudo mv deepstream_test4_app.c ~/work/sources/apps/sample_apps/deepstream-test4/deepstream_test4_app.c
 		$ sudo mv nvmsgconv.cpp ~/work/sources/libs/nvmsgconv/nvmsgconv.cpp
 		
-	4. Make 2 files
+	4. Confirm your webcam
+		$ sudo apt-get install v4l-utils
+		$ v4l2-ctl --list-devices
+		  #Check camera path
+                   for example:list-devices
+                   UVC Camera (046d:0990) (usb-3610000.xhci-2.3):
+                        /dev/video0
+                  #Check webcamera capture with GStreamer
+                $ gst-launch-1.0 v4l2src device="/dev/video0" !   "video/x-raw, width=800, height=600, format=(string)YUY2" ! xvimagesink -e
+		  (Note that if you use the another path of the camera and resolution of it, you need to modify the codes in the deepstream-test4-app.c) 
+		
+	5. Make 2 files
 		$ cd ~/work/sources/libs/nvmsgconv
 		$ sudo make
 		$ sudo make install
-
+		
 		$ cd ~/work/sources/apps/sample_apps/deepstream-test4
 		$ sudo make
 		$ sudo make install
-				
-	5. Confirm your webcam
-		$ sudo apt-get install v4l-utils
-		$ v4l2-ctl --list-devices
 		
 	6. Start deepstream sample app
 		$ cd ~/work/sources/apps/sample_apps/deepstream-test4/
